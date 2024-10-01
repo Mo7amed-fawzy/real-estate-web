@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:real_estate_app/widgets/menu/logo.dart';
 
 class SideMenuSection extends StatelessWidget {
   const SideMenuSection({super.key});
@@ -8,7 +9,7 @@ class SideMenuSection extends StatelessWidget {
     return const Drawer(
       child: SafeArea(
           child: Column(
-        children: [AspectRatio(aspectRatio: 1.23)],
+        children: [Logo()],
       )),
     );
   }

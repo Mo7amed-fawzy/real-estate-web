@@ -4,9 +4,9 @@ import 'package:google_fonts/google_fonts.dart';
 // الألوان الغامقة
 const kPrimaryColor = Color(0xFF3799FB);
 const kSecondaryColor = Color(0xFF2B374F);
-const kDarkColor = Color(0xFF000714); // لون داكن
-const kBodyTextColor = Color(0xFF979DAC); // لون النص في الوضع الداكن
-const kBgColor = Color(0xFF001233); // خلفية داكنة
+const kDarkColor = Color(0xFF000714);
+const kBodyTextColor = Color(0xFF979DAC);
+const kBgColor = Color(0xFF001233);
 
 // الالوان الفاتحة
 const kLightPrimaryColor = Color(0xFF3799FB); // نفس اللون الأساسي

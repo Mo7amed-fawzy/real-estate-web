@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:real_estate_app/constants.dart';
+import 'package:real_estate_app/utils/constants.dart';
 import 'package:real_estate_app/screens/home_screen.dart';
 
 void main() {
