@@ -1,26 +1,21 @@
 import 'package:flutter/material.dart';
+import 'package:real_estate_app/constants.dart';
+import 'package:real_estate_app/screens/home_screen.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const REweb());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class REweb extends StatelessWidget {
+  const REweb({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: MyHomePage(),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Real Estate',
+      theme: isDarkMode ? darkTheme : lightTheme,
+      home: const HomeScreen(),
     );
-  }
-}
-
-class MyHomePage extends StatelessWidget {
-  const MyHomePage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Scaffold();
   }
 }
