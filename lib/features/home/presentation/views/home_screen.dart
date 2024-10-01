@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:real_estate_app/widgets/menu/side_menu_section.dart';
+import 'package:real_estate_app/features/home/presentation/views/components/side_menu_section.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});

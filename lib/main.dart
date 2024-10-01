@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:real_estate_app/utils/constants.dart';
-import 'package:real_estate_app/screens/home_screen.dart';
+import 'package:real_estate_app/core/utils/constants.dart';
+import 'package:real_estate_app/features/home/presentation/views/home_screen.dart';
 
 void main() {
   runApp(const REweb());

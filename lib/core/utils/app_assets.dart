@@ -47,4 +47,14 @@ abstract class Assets {
   static const String astsImgProject06 = "assets/images/project-06.jpg";
 
   static const String astsIcncheck = "assets/icons/check.svg";
+
+  static const String astsIdownload = "assets/icons/download.svg";
+
+  static const String astsIlinkedin = "assets/icons/linkedin.svg";
+
+  static const String astsIgithub = "assets/icons/github.svg";
+
+  static const String astsItwitter = "assets/icons/twitter.svg";
+
+  static const String astsIdribble = "assets/icons/dribble.svg";
 }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:real_estate_app/utils/app_assets.dart';
-import 'package:real_estate_app/utils/constants.dart';
+import 'package:real_estate_app/core/utils/app_assets.dart';
+import 'package:real_estate_app/core/utils/constants.dart';
 
 class Logo extends StatelessWidget {
   const Logo({

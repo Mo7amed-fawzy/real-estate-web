@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:real_estate_app/utils/app_assets.dart';
-import 'package:real_estate_app/utils/constants.dart';
+import 'package:real_estate_app/core/functions/build_goals.dart';
+import 'package:real_estate_app/core/utils/constants.dart';
 
 class Goals extends StatelessWidget {
   const Goals({super.key});
@@ -23,19 +22,6 @@ class Goals extends StatelessWidget {
         buildGoals(text: 'Excution phase'),
         buildGoals(text: 'New way to living'),
       ],
-    );
-  }
-
-  Padding buildGoals({required String text}) {
-    return Padding(
-      padding: const EdgeInsets.only(bottom: kDefaultPadding / 2),
-      child: Row(
-        children: [
-          SvgPicture.asset(Assets.astsIcncheck),
-          const SizedBox(width: kDefaultPadding / 2),
-          Text(text),
-        ],
-      ),
     );
   }
 }
