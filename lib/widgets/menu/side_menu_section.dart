@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:real_estate_app/utils/constants.dart';
 import 'package:real_estate_app/widgets/menu/contact_info.dart';
+import 'package:real_estate_app/widgets/menu/goals.dart';
 import 'package:real_estate_app/widgets/menu/logo.dart';
 
 class SideMenuSection extends StatelessWidget {
@@ -17,8 +18,11 @@ class SideMenuSection extends StatelessWidget {
               child: SingleChildScrollView(
             padding: EdgeInsets.all(kDefaultPadding),
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 ContactInfo(),
+                Divider(),
+                Goals(),
                 Divider(),
               ],
             ),

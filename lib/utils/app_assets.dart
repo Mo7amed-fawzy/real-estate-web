@@ -45,4 +45,6 @@ abstract class Assets {
   /// Assets for assetsImagesProject06
   /// assets/images/project-06.jpg
   static const String astsImgProject06 = "assets/images/project-06.jpg";
+
+  static const String astsIcncheck = "assets/icons/check.svg";
 }
