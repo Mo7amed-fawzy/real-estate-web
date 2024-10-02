@@ -28,7 +28,7 @@ class Logo extends StatelessWidget {
               'Real State',
               style: Theme.of(context).textTheme.bodyMedium,
             ),
-            const Text(
+            const SelectableText(
               'Modern home with \n greate interior design',
               textAlign: TextAlign.center,
               style: TextStyle(

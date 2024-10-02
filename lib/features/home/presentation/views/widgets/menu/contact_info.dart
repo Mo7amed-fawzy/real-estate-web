@@ -10,9 +10,9 @@ class ContactInfo extends StatelessWidget {
       children: [
         buildContactInfo(title: 'Address', text: 'Civil Registry Street'),
         buildContactInfo(title: 'Country', text: 'Egypt'),
-        buildContactInfo(title: 'Email', text: 'm07amed1st@gmail.com'),
+        buildContactInfo(title: 'Email', text: 'm07amed@gmil.com'),
         buildContactInfo(title: 'Mobile', text: '01157902453'),
-        buildContactInfo(title: 'Website', text: 'MoFawzy@website.come'),
+        buildContactInfo(title: 'Website', text: 'Moh@wbsit.com'),
       ],
     );
   }

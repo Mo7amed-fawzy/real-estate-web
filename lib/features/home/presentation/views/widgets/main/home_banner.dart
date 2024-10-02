@@ -9,7 +9,7 @@ class HomeBanner extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AspectRatio(
-      aspectRatio: 1.7,
+      aspectRatio: Responsive.isMoblie(context) ? 1 : 1.7,
       child: Stack(
         fit: StackFit.expand, // وحطيت دي اضافي علشان يتوزعو علي كامل الشاشه
         children: [
@@ -26,8 +26,8 @@ class HomeBanner extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(
-                  'Build a greate future \nfor all of as!',
+                SelectableText(
+                  'Build a great future \nfor all of us!',
                   style: Responsive.isDesktop(context)
                       ? Theme.of(context).textTheme.headlineLarge!.copyWith(
                             color: Colors.white,

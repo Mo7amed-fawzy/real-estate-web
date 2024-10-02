@@ -10,7 +10,7 @@ Padding buildGoals({required String text}) {
       children: [
         SvgPicture.asset(Assets.astsIcncheck),
         const SizedBox(width: kDefaultPadding / 2),
-        Text(text),
+        SelectableText(text),
       ],
     ),
   );

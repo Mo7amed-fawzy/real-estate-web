@@ -7,8 +7,13 @@ Padding buildContactInfo({required String title, required String text}) {
     child: Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Text(title, style: const TextStyle(color: Colors.white)),
-        Text(text),
+        SelectableText(
+          title,
+          style: const TextStyle(color: Colors.white),
+        ),
+        SelectableText(
+          text,
+        ),
       ],
     ),
   );

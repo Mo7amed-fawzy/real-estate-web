@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:real_estate_app/core/responsive.dart';
 import 'package:real_estate_app/core/utils/constants.dart';
 
 class IconInfoItem extends StatelessWidget {
@@ -23,10 +24,13 @@ class IconInfoItem extends StatelessWidget {
                   color: kPrimaryColor,
                   fontSize: 30,
                 )),
-        Text(
-          label,
-          style: Theme.of(context).textTheme.headlineSmall!,
-        ),
+        SelectableText(label,
+            style: Responsive.isMoblie(context)
+                ? Theme.of(context)
+                    .textTheme
+                    .headlineSmall!
+                    .copyWith(fontSize: 20)
+                : Theme.of(context).textTheme.headlineSmall!),
       ],
     );
   }

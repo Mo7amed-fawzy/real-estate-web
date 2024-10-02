@@ -34,10 +34,12 @@ class HomeScreen extends StatelessWidget {
                   const Expanded(
                       flex: 2, // دي شبه لما ادي ويدث بنسبة % فالفرونت
                       child: SideMenuSection()),
+                const SizedBox(width: kDefaultPadding),
                 Expanded(
                   flex: 7,
                   child: mainSection,
                 ),
+                const SizedBox(width: kDefaultPadding),
               ],
             ),
           ),
