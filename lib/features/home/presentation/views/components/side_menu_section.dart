@@ -13,6 +13,7 @@ class SideMenuSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
+      backgroundColor: kBgColor,
       child: SafeArea(
           child: Column(children: [
         const Logo(),
