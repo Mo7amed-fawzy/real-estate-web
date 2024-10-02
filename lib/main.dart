@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:real_estate_app/core/utils/constants.dart';
-import 'package:real_estate_app/features/home/presentation/views/home_screen.dart';
+import 'package:real_estate_app/features/home/presentation/views/components/main_section.dart';
 
 void main() {
   runApp(const REweb());
@@ -15,7 +15,7 @@ class REweb extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Real Estate',
       theme: isDarkMode ? darkTheme : lightTheme,
-      home: const HomeScreen(),
+      home: const MainSection(),
     );
   }
 }

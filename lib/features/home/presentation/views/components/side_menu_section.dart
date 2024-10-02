@@ -49,12 +49,16 @@ class SideMenuSection extends StatelessWidget {
                       ),
                     ),
                     Container(
+                      margin: const EdgeInsets.only(top: kDefaultPadding * 2),
+                      color: kSecondaryColor,
                       child: const Row(
                         children: [
+                          Spacer(),
                           CustomIconButton(myicon: Assets.astsIlinkedin),
                           CustomIconButton(myicon: Assets.astsIgithub),
                           CustomIconButton(myicon: Assets.astsItwitter),
-                          CustomIconButton(myicon: Assets.astsIdribble)
+                          CustomIconButton(myicon: Assets.astsIdribble),
+                          Spacer(),
                         ],
                       ),
                     ),
