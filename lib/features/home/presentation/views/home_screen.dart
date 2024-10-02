@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:real_estate_app/core/responsive.dart';
+import 'package:real_estate_app/core/utils/constants.dart';
 import 'package:real_estate_app/features/home/presentation/views/components/side_menu_section.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -8,6 +10,17 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: Responsive.isDesktop(context) // شغلي علي الحاجه الفوق البادي
+          ? null
+          : AppBar(
+              backgroundColor: kBgColor,
+              leading: Builder(
+                  builder: (context) => IconButton(
+                      onPressed: () {
+                        Scaffold.of(context).openDrawer();
+                      },
+                      icon: const Icon(Icons.menu)))),
+      drawer: const SideMenuSection(),
       body: SafeArea(
         child: Center(
           child: Container(
@@ -16,9 +29,11 @@ class HomeScreen extends StatelessWidget {
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Expanded(
-                    flex: 2, // دي شبه لما ادي ويدث بنسبة % فالفرونت
-                    child: SideMenuSection()),
+                if (Responsive.isDesktop(context))
+                  // بقولو لو كمبيوتر اظهرلي الاكسباند التحت دي ولو لا متظهرهاش
+                  const Expanded(
+                      flex: 2, // دي شبه لما ادي ويدث بنسبة % فالفرونت
+                      child: SideMenuSection()),
                 Expanded(
                   flex: 7,
                   child: mainSection,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:real_estate_app/core/responsive.dart';
 import 'package:real_estate_app/core/utils/app_assets.dart';
 import 'package:real_estate_app/core/utils/constants.dart';
 
@@ -27,10 +28,15 @@ class HomeBanner extends StatelessWidget {
               children: [
                 Text(
                   'Build a greate future \nfor all of as!',
-                  style: Theme.of(context).textTheme.headlineLarge!.copyWith(
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                      ),
+                  style: Responsive.isDesktop(context)
+                      ? Theme.of(context).textTheme.headlineLarge!.copyWith(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          )
+                      : Theme.of(context).textTheme.headlineSmall!.copyWith(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
                 ),
                 const SizedBox(height: kDefaultPadding),
                 ElevatedButton(
