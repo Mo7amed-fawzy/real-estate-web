@@ -3,6 +3,8 @@ import 'package:real_estate_app/features/home/presentation/views/home_screen.dar
 import 'package:real_estate_app/features/home/presentation/views/widgets/main/home_banner.dart';
 import 'package:real_estate_app/features/home/presentation/views/widgets/main/icon_info.dart';
 
+import '../widgets/main/projects.dart';
+
 class MainSection extends StatelessWidget {
   const MainSection({super.key});
 
@@ -14,6 +16,7 @@ class MainSection extends StatelessWidget {
           children: [
             HomeBanner(),
             IconInfo(),
+            Projects(),
           ],
         ),
       ),
