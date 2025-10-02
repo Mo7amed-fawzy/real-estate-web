@@ -87,8 +87,8 @@ These data entries are **mock only** and do not connect to any backend.
 
 1. **Clone the repository**  
 ```bash
-   git clone https://github.com/your-username/real-estate-ui.git
-   cd real-estate-ui
+   git clone https://github.com/Mo7amed-fawzy/real-estate-web.git
+   cd real_estate_app
 ```
 
 2. **Install dependencies**  
